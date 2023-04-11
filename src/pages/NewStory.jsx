@@ -11,6 +11,7 @@ const NewStory = () => {
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("Hello World");
   const navigate = useNavigate();
+
   const onCreateBlog = () => {
     newRequest("/blog/create", {
       method: "POST",
