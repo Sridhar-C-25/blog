@@ -39,7 +39,7 @@ pre {
   overflow-x: auto;
   line-height: 1.7rem;
   color: white;
-  max-width: fit-content;
+  max-width: 700px;
   padding: 1rem;
   border-radius: 1rem;
 }

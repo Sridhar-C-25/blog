@@ -8,9 +8,7 @@ import "quill/dist/quill.bubble.css";
 Quill.register("modules/imageUploader", ImageUploader);
 Quill.register("modules/imageResize", ImageResize);
 
-const RichTextEditor = () => {
-  const [value, setValue] = useState("");
-
+const RichTextEditor = ({ value, setValue }) => {
   useEffect(() => {
     console.log(value);
   }, [value]);

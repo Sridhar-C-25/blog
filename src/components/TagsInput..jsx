@@ -1,15 +1,11 @@
 import { Autocomplete, TextField } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-function TagsInput() {
-  const [tags, setTags] = useState([]);
-
+function TagsInput({ tags, setTags }) {
   const handleAddTag = (event, value) => {
-    setTags([...tags, value]);
-  };
-
-  const handleDeleteTag = (tagToDelete) => {
-    setTags(tags.filter((tag) => tag !== tagToDelete));
+    console.log(value);
+    // setTags([]);
+    setTags(value);
   };
 
   return (

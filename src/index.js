@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 import { grey } from "@mui/material/colors";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const theme = createTheme({
@@ -19,7 +20,9 @@ const theme = createTheme({
 root.render(
   <ThemeProvider theme={theme}>
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </ThemeProvider>
 );

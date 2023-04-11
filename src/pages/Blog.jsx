@@ -54,6 +54,11 @@ const Blog = () => {
     blue[400],
     yellow[600],
   ];
+
+  const onLike = () => {
+    console.log(blogId);
+  };
+
   return (
     <div className="max-w-4xl mx-auto my-5">
       <SideDrawer toggleDrawer={toggleDrawer} state={state} setState={setState}>
@@ -95,7 +100,10 @@ const Blog = () => {
           className="cursor-pointer"
         ></ChatBubbleOutlineOutlinedIcon>{" "}
         {blog?.comments?.length}
-        <ThumbUpOutlinedIcon className="cursor-pointer"></ThumbUpOutlinedIcon>{" "}
+        <ThumbUpOutlinedIcon
+          onClick={onLike}
+          className="cursor-pointer"
+        ></ThumbUpOutlinedIcon>{" "}
         {blog?.likes?.length}
       </div>
       <div className="pb-4 border-b mb-3">
